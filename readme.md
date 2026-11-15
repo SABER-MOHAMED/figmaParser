@@ -1,6 +1,6 @@
-# Figma `.fig` File Parser — Format Study & Data-Template Prototype
+# Figma `.fig` File Parser: Format Study & Data-Template Prototype
 
-A local, browser-based viewer for Figma's binary `.fig` files, plus a prototype that maps parsed Figma nodes into a structured data template. I built this in 2024 while studying how Figma stores design documents on disk.
+A local, browser-based viewer for Figma's binary `.fig` files, plus a prototype that maps parsed Figma nodes into a structured data template. I built this in 2024 as a founding member at Yutapp, while studying how Figma stores design documents on disk.
 
 ## Credits
 
