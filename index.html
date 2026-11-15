@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>Figma .fig file format parser online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="node_modules/@zip.js/zip.js@.7.32/zip.min.js"></script>
+  <script src="node_modules/fzstd@0.1.1/umd/index.js"></script>
+  <script src="node_modules/kiwi-schema@0.5.0/browser.js"></script>
+  <script src="node_modules/pako@2.1.0/dist/pako_inflate.min.js"></script>
+  <script src="parser.js"></script>
+  <script src="script.js" type="module"></script>
+</head>
+
+<body>
+  <div id="loaded">
+    <select id="sidebar" size="2"></select>
+    <div id="preview"></div>
+  </div>
+  <div id="start">
+    <div>
+      <p>This is a parser for files exported from <a href="https://www.figma.com/">Figma</a>. The file format is an
+        unstable internal implementation detail of Figma, so this parser may stop working at some point for new Figma
+        files if Figma changes their file format. You can get a .fig file with the
+        <a href="https://help.figma.com/hc/en-us/articles/8403626871063-Save-a-local-copy-of-files">Save local
+          copy...</a> command in the editor.
+      </p>
+      <p class="center">Drag and drop or <button id="upload">Upload a .fig file</button> 
+        to begin
+      </p>
+      <p class="error">&nbsp;</p>
+    </div>
+  </div>
+  <div id="progress">
+    <div>
+      <p>Exporting...</p>
+      <div class="bar">
+        <div></div>
+      </div>
+      <p><button id="cancel">Cancel</button></p>
+    </div>
+  </div>
+</body>
+
+</html>

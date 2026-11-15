@@ -1,0 +1,17 @@
+{
+  "name": "figparser",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@zip.js/zip.js": "file:.7.32/zip.min.js",
+    "pako@2.1.0/dist": "file:/zip.min.js",
+    "kiwi-schema": "^0.5.0"
+  }
+}
